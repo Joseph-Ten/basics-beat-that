@@ -47,13 +47,13 @@ var main = function (input) {
       gameMode = "arrangeDice";
       return (
         player2Rolls +
-        " are the dice rolls. Type 1 to submit the first dice and 2 for the second dice"
+        " Type 1 to submit the first dice and 2 for the second dice"
       );
     }
     gameMode = "arrangeDice";
     return (
       player1Rolls +
-      " are the dice rolls. 1 to submit the first dice and 2 for the second dice"
+      "  Type 1 to submit the first dice and 2 for the second dice"
     );
   }
 
@@ -65,7 +65,7 @@ var main = function (input) {
       player1Score = concatenate2Numbers(player1Rolls[0], player1Rolls[1]);
       return (
         player1Score +
-        " is the player 1 score. Click submit to roll for player 2"
+        " points. Now submit for player 2"
       );
     }
 
@@ -75,7 +75,7 @@ var main = function (input) {
       player1Score = concatenate2Numbers(player1Rolls[1], player1Rolls[0]);
       return (
         player1Score +
-        " is the player 1 score. Click submit to roll for player 2"
+        " points. Now submit for player 2"
       );
     }
     if (player === 2 && input == 1) {
